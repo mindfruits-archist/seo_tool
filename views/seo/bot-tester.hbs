@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> header}}
+  <body>
+		{{> body_style}}
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<div class="hero-section" style="background-image:url(/inbound-marketing.jpg);">
+			{{> h1_section}}
+			</div>
+			{{> seo_back}}
+      <p>Vérifiez si le fichier robots.txt présent sur votre serveur pénalisent votre site web, et voyez comment optimiser ce fichier.</p>
+			<form class="" action="index.html" method="post">
+  			<div class="form-group">
+          <label>Entrez une URL</label>
+          <input type="url" class="form-control" id="website_URL" aria-describedby="website_URL" placeholder="www.adresse.fr">
+        </div>
+  			<div class="form-group">
+          <label>Choisir un User-Agent:</label>
+          <select id="selectAgent" class="" name="">
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+				<div class="URL_box">
+				  <button type="button" class="btn btn-primary btn-lg">Lancer</button>
+        </div>
+      </form>
+      <script type="text/javascript">
+        var userAgents = [{"Google":["Googlebot SmartphoneGooglebot","GooglebotGooglebot","Googlebot NewsGooglebot-News","Googlebot ImagesGooglebot-Image","Googlebot VideoGooglebot-Video","AdSenseMediapartners-Google","AdsBotAdsBot-Google","AdsBot Mobile Web AndroidAdsBot-Google-Mobile","AdsBot Mobile WebAdsBot-Google-Mobile"]},{"Bing":["BingbotBingbot","Bingbot SmartphoneBingbot","MSNBotMSNBot","MSNBot-MediaMSNBot-Media","AdIdxBotAdIdxBot","BingPreviewBingPreview"]},{"Other Search Engines":["Yahoo!Slurp","DuckDuckGoDuckDuckBot","BaiduBaiduspider","Baidu - Render (Desktop)Baiduspider","Baidu - Render (Mobile)Baiduspider","YandexYandexbot","AppleApplebot"]},{"Social Media":["FacebookFacebookExternalHit","TwitterTwitterbot","LinkedInLinkedInBot"]},{"SEO Tools":["TechnicalSEO.comTechnicalSEOdotCom","Moz (Campaign/Diagnostics)rogerbot","Moz (Mozscape/Freshscape)DotBot","MajesticMJ12bot","AhrefsAhrefsBot","Alexaia_archiver","OnCrawlOnCrawl","BotifyBotify","Botify (Mobile)Botify"]},{"Browsers":["Chrome (Android Mobile)N/A","Chrome (Windows Desktop)N/A","Safari (iPhone)N/A"]},{"Misc.":["All (robots.txt)*"]}]
+        console.log(userAgents)
+        var separateur, option
+        for(var i=0; i<userAgents.length; i++){
+          separateur = ""
+          for(a in userAgents[i]){
+            alert('work stopped here')
+            if(separateur != "")$('option').attr({disabled:true}).html(a)
+            $('option').html(userAgents[i])
+            selectAgent.
+          }
+        }
+      </script>
+		</div>
+  </body>
+</html>

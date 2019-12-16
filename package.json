@@ -1,0 +1,21 @@
+{
+  "name": "node-web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.15.4",
+    "hbs": "^4.0.1",
+    "nodemon": "^1.19.4",
+    "url-metadata": "^2.4.0",
+    "download": "^7.1.0",
+    "get-ssl-certificate": "^2.3.3",
+    "sendmail": "^1.6.1"
+  }
+}

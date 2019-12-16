@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{> header}}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+		{{> menu}}
+		{{> body_style}}
+			<div class="hero-section" style="background-image:url(/inbound-marketing.jpg);">
+			{{> h1_section}}
+			</div>
+			{{> seo_back}}
+			<p>Découvrez comment optimiser votre title et votre meta-description pour Google.</p>
+			<form class="" action="index.html" method="post">
+				<div class="form-group">
+					<label for="url">Entrer une adresse URL</label>
+					<input name="url" placeholder="www.mindfruits.biz" type="text" class="form-control" value="https://www.mindfruits.biz/">
+				</div>
+				<div class="URL_box">
+					<button onclick="startPreviewURL(this.form)" type="button" class="btn btn-primary btn-lg" style="margin-bottom: 30px;">Je teste mon URL</button>
+				</div>
+				<hr>
+				<div id="seo_meta_datas">
+					<div class="form-group">
+						<input type="title" class="form-control" id="input-title" aria-describedby="title" placeholder="Entrez votre title">
+						<input type="url" class="form-control" id="input-url" aria-describedby="metades" placeholder="Entrez votre URL">
+						<input type="metades" class="form-control" id="input-metades" aria-describedby="metades" placeholder="Entrez votre méta-description">
+					</div>
+					<!--
+					<div class="URL_box">
+						<button onclick="startPreview()" type="button" class="btn btn-primary btn-lg" style="margin-bottom: 30px;">Je teste mes métas</button>
+					</div>
+					-->
+				</div>
+			</form>
+
+			<div id="div1"></div>
+
+			<div style="width:100%;height:240px;">
+				<div id="" style="background-color: #FFFFFF;height: 90%;width: 60%;max-width: 640px;margin-top: 20px;margin-bottom: 20px;padding: 20px; float:left;">
+					<div style="margin:20px">
+						<div id="res-title" class="res-title">Comment optimiser votre Title et Meta-Description | Outils SEO</div>
+						<div id="res-url" class="res-url">https://outils.mindfruits.biz/outils-seo/optimisation-title-metades-seo</div>
+						<div id="res-metades" class="res-metades">Découvrez comment optimiser votre title et votre meta-description pour les moteurs de recherche. Toutes les astuces et meilleures pratiques !</div>
+					</div>
+				</div>
+
+				<div style="height: 90%; background-color: #F6F6F6; margin-top: 20px;margin-bottom: 20px;padding: 20px;width:5%;float:left;"></div>
+
+				<div style="width:35%; height: 90%;float:right;margin-top: 20px;margin-bottom: 20px;padding: 20px;background-color: #FFFFFF; font-family: arial,sans-serif;">
+					<div>
+						<div class="score-title">Votre score d'optimisation</div>
+						<div id="score-result" style="font-weight:bold; font-size:100px">&nbsp;&nbsp;&nbsp;&nbsp;/100</div>
+					</div>
+				</div>
+			</div>
+			<div style="width:100%">
+				<table id="seo_meta_tab" border="1" cellspacing="1" cellpadding="1" align="left">
+					<tbody>
+						<tr class="gray-bkg">
+							<th>&nbsp;</th>
+							<th style="text-align: center;" colspan="3">Caractères</th>
+							<th style="text-align: center;" colspan="3">Pixels</th>
+							<th>&nbsp;</th>
+						</tr>
+						<tr class="gray-bkg">
+							<th>Element</td>
+							<th style="text-align: center;">Longueur</th>
+							<th style="text-align: center;">Affiché</th>
+							<th style="text-align: center;">Tronqué</th>
+							<th style="text-align: center;">Longueur</th>
+							<th style="text-align: center;">Disponible</th>
+							<th style="text-align: center;">Restant</th>
+							<th style="text-align: center;">Statut</th>
+						</tr>
+						<tr class="white-bkg">
+							<th>Titre</th>
+							<td style="text-align: center;"><span id="titlechar">0</span></td>
+							<td style="text-align: center;"><span id="titlechardisplayed">62</span></td>
+							<td style="text-align: center;"><span id="titlechartruncated"><span style="color:green">0</span></span></td>
+							<td style="text-align: center;"><span id="titlepixels">0</span></td>
+							<td style="text-align: center;"><span id="titlepixelsavailable">500</span></td>
+							<td style="text-align: center;"><span id="titlepixelsremaining"><span style="color:green">0</span></span></td>
+							<td style="text-align: center; vertical-align: middle;"><span id="statuschars" class="statuschars_OK">&nbsp;</span></td>
+						</tr>
+						<tr class="white-bkg">
+							<th>Description</th>
+							<td style="text-align: center;"><span id="snippetchar">0</span></td>
+							<td style="text-align: center;"><span id="snippetchardisplayed">145</span></td>
+							<td style="text-align: center;"><span id="snippetchartruncated">0<span style="color:green"></span></span></td>
+							<td style="text-align: center;"><span id="snippetpixels">0</span></td>
+							<td style="text-align: center;"><span id="snippetpixelsavailable">930</span></td>
+							<td style="text-align: center;"><span id="snippetpixelsremaining"><span style="color:green">0</span></span></td>
+							<td style="text-align: center; vertical-align: middle;"><span id="statuspixels" class="statuspixels_OK">&nbsp;</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div id="recommandations-placeholder">
+			</div>
+
+
+	{{> footer}}
+
+	<script>
+	</script>
+	<script type="text/javascript" src="/javascript/measureText.js"></script>
+	<script type="text/javascript" src="/javascript/script_.js"></script>
+	</body>
+</html>

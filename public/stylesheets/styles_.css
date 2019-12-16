@@ -1,0 +1,9 @@
+table#seo_meta_tab{width:100%}
+table#seo_meta_tab th{background:silver;font-weight:bold;}
+table#seo_meta_tab td{}
+table#seo_meta_tab th,table#seo_meta_tab td{text-align:center;width:calc(100% / 8)}
+#seo_meta_datas.opacity{opacity:.4;border:solid;transition:opacity .2s, border-color .8s;}
+#seo_meta_datas.opacity:hover{opacity:1;border-color:orange}
+.statuschars_OK,.statuspixels_OK{display:block;}
+.statuschars_OK.success,.statuspixels_OK.success{background:url(good_or_tick.png) no-repeat scroll center bottom / contain rgba(0, 0, 0, 0)}
+.statuschars_OK.fail,.statuspixels_OK.fail{background:url(notgood_or_tick.png) no-repeat scroll center bottom / contain rgba(0, 0, 0, 0)}
