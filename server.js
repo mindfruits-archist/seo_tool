@@ -2,12 +2,12 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 const urlMetadata = require('url-metadata')
-const ssl = require('./SSL/index_')
+
+const ssl = require('./public/SSL/index_.js')
 
 const port = process.env.PORT || 3000;
 var app = express();
 
-//var ssl = require('SSL/index')
 
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs')
@@ -166,9 +166,12 @@ app.get('/anniv', (req, res) => {
 		pageH1: 'Anniversaire',
 	});
 })
-app.get('/ssl', (req, res) =>
+app.get('/sslChecker/:responseType', (req, res) =>{
   ssl.launch(req,res)
-)
+})
+app.get('/sslChecker', (req, res) =>{
+  ssl.launch(req,res)
+})
 
 // Remplace n'importe quelle tentative d'accès par l'affichage de la page de maintenance
 // app.use((req, res, next) => {
